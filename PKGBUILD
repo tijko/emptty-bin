@@ -19,5 +19,8 @@ source=("$pkgname-$pkgver.tar.gz::$url/archive/v$pkgver.tar.gz")
 sha512sums=('05ca5968742e139dd1e4579b9863ba69cf958d3a7a4ae85429b30be4464635a24130d43016c63eb62f444218ebad1a1dbbe6c63379c174dd8a290d79c5102b1a')
 
 package() {
-  install -Dm 755 "usr/bin/${pkgname%-bin}" -t "${pkgdir}/usr/bin"
+  install -DZs "usr/bin/emptty-bin" -m 755 -t "/usr/bin"
+  install -DZ "etc/emptty/conf" -m 644 -T "/etc/emptty/conf"
+  install -D "usr/share/man/man1/emptty.1.gz" -t "/usr/share/man/man1"
+  install -DZ "usr/lib/systemd/system/emptty.service" -m 644 -T "/usr/lib/systemd/system/emptty.service"
 }
