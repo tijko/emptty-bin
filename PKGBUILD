@@ -16,8 +16,8 @@ optdepends=('xorg-server: default display server'
             'wayland: alternative to xorg-server')
 backup=('etc/emptty/conf')
 provides=('emptty')
-source=("$pkgname-$pkgver.tar.gz::$url/releases/download/$pkgver/$pkgname-$pkgver.tgz")
-sha512sums=('5cae44e350d2b835a532c6f0c8ce8c98cd9ad8d933f49dac2b9681a71731b79ba02c92242852bb731e60e6e78b1d997b2fefc0579c96b91fcc45f62145d03531')
+source=("$pkgname-$pkgver.tar.gz::$url/releases/download/$pkgver/$pkgname-$pkgver.tar.gz")
+sha512sums=('8ce8c98cd9ad8d933f49dac2b9681a71731b79ba02c92242852bb731e60e6e78b1d997b2fefc0579c96b91fcc45f62145d03531')
 
 package() {
   install -DZs "usr/bin/emptty" -m 755 -t "/usr/bin"

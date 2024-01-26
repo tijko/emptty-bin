@@ -15,7 +15,7 @@ pkgbase = emptty-bin
 	optdepends = wayland: alternative to xorg-server
 	provides = emptty
 	backup = etc/emptty/conf
-	source = emptty-bin-0.11.0.tar.gz::https://github.com/tijko/emptty-bin/releases/download/0.11.0/emptty-bin-0.11.0.tgz
-	sha512sums = 5cae44e350d2b835a532c6f0c8ce8c98cd9ad8d933f49dac2b9681a71731b79ba02c92242852bb731e60e6e78b1d997b2fefc0579c96b91fcc45f62145d03531
+	source = emptty-bin-0.11.0.tar.gz::https://github.com/tijko/emptty-bin/releases/download/0.11.0/emptty-bin-0.11.0.tar.gz
+	sha512sums = 8ce8c98cd9ad8d933f49dac2b9681a71731b79ba02c92242852bb731e60e6e78b1d997b2fefc0579c96b91fcc45f62145d03531
 
 pkgname = emptty-bin
